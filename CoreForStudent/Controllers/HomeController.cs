@@ -22,6 +22,7 @@ namespace CoreForStudent.Controllers
         }
         public IActionResult GetStudent()
         {
+            string s = "sss";
             return View();
         }
     }

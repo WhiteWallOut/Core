@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CoreForStudent.Controllers
 {
-    public class HomeController:ControllerBase
+    public class HomeController:Controller
     {
         private readonly IStudentRepository _studentRepository;
 
@@ -19,6 +19,10 @@ namespace CoreForStudent.Controllers
         {
             var model =  _studentRepository.GetStudent(1);
             return Ok();
+        }
+        public IActionResult GetStudent()
+        {
+            return View();
         }
     }
 }
